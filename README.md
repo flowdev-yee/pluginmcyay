@@ -1,11 +1,25 @@
-# PaperMC/Spigot Minecraft Server Plugin Template
-A template for building PaperMC/Spigot Minecraft server plugins!
+# Kinetic Enchantments
+A PaperMC plugin prototype for physics-driven movement and impact items.
 
 <!-- TODO: CHANGE ME -->
 [![Test and Release](https://github.com/CrimsonWarpedcraft/plugin-template/actions/workflows/main.yml/badge.svg)](https://github.com/CrimsonWarpedcraft/plugin-template/actions/workflows/main.yml)
 
 <!-- TODO: CHANGE ME -->
 [![](https://dcbadge.limes.pink/api/server/5XMmeV6EtJ)](https://discord.gg/5XMmeV6EtJ)
+
+
+## Kinetic Enchantments
+
+This plugin prototype enables physics-driven item effects when players use items whose display
+names contain the following text:
+
+* `Recoil Boots` - sneak while taking fall damage to cancel the damage and launch nearby mobs
+  upward in a shockwave.
+* `Tether Bow` - shoot two blocks or mobs within three seconds to create a tether; entities are
+  pulled toward the midpoint between both anchors.
+* `Wind-Swept Blade` - hit mobs for minimal damage but strong horizontal knockback.
+* `Blink Pearl` - throw a named ender pearl to swap positions with the entity it hits instead of
+  performing a normal pearl teleport.
 
 ## Features
 ### Github Actions 🎬
