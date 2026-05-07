@@ -1,6 +1,43 @@
-main: ${PACKAGE}.${NAME}
-name: ${NAME}
-version: "${VERSION}"
+name: JennyPlugin
+version: "1.0.0"
+main: com.jenny.JennyPlugin
 api-version: "1.21.11"
-author: CrimsonWarpedcraft
-description: Adds physics-driven kinetic enchantment items for movement and impact play.
+author: JennyPlugin
+description: Jenny NPC with custom skin and smooth movement physics
+
+commands:
+  jenny:
+    description: Main Jenny NPC control command
+    usage: /jenny <spawn|remove|here|follow|stop>
+    aliases: [j, jen]
+    permission: jenny.use
+
+permissions:
+  jenny.*:
+    description: All Jenny permissions
+    default: op
+    children:
+      jenny.use: true
+      jenny.spawn: true
+      jenny.remove: true
+      jenny.here: true
+      jenny.follow: true
+      jenny.stop: true
+  jenny.use:
+    description: Use /jenny command
+    default: true
+  jenny.spawn:
+    description: Spawn Jenny
+    default: op
+  jenny.remove:
+    description: Remove Jenny
+    default: op
+  jenny.here:
+    description: Teleport Jenny to you
+    default: true
+  jenny.follow:
+    description: Make Jenny follow you
+    default: true
+  jenny.stop:
+    description: Stop Jenny from following
+    default: true
